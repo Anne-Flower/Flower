@@ -1,5 +1,5 @@
 
-import Tab from "../atomes/tab"
+import Tab from "../atoms/tab"
 
 export default function Sidebar() {
   return (
