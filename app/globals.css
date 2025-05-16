@@ -5,7 +5,7 @@
 
 /* fond global*/
 body {
-  background-color: #EBDEDE;
+  background-color: #f5efef;
   color: #400F38;
   font-family: 'IBM Plex Mono', monospace;
   margin: 0;
@@ -15,8 +15,8 @@ body {
 /* TITRE */
 h1 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 70px;
-  line-height: 66px;
+  font-size: 44px;
+  line-height: 42px;
   color: #401038;
   text-transform: uppercase;
   font-weight: 700;
@@ -64,7 +64,7 @@ p {
   left: 0;
   width: 200px;
   height: 100vh;
-  background-color: #EBDEDE;
+  background-color: #f5efef;
   border-right: 1px solid #CCADAD;
   display: flex;
   flex-direction: column;
