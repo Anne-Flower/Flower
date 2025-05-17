@@ -4,20 +4,23 @@ import { useState } from "react";
 import Logo from "./components/atoms/logo";
 import Name from "./components/atoms/name";
 import Video from "./components/atoms/video";
+import Photo from "./components/atoms/photo";
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <main className="flex w-full"
+    <main className="flex w-full h-full overflow-x-hidden overflow-y-hidden"
     role="main"
       aria-label="Section d'accueil avec logo et nom">
-        <header className="flex items-center justify-left" id="site-title">
+        <header className="flex items-center justify-left overflow-y-hidden" id="site-title">
           <Logo/>
           <Name/> 
         </header>
-        <div className="w-[1176px]">
+        {/* <div className="w-[1176px]">
           <Video/>
-        </div>
+        </div> */}
+        <div className="w-full max-w-[870px] ml-[305px] mb-42"><Photo/></div>
+        
         <div>
         <p
           onMouseEnter={() => setIsHovered(true)}

@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${ibm.variable} ${josefin.variable} bg-[#f5efef]` }>
+      <body className={`${ibm.variable} ${josefin.variable} bg-[#f5efef] overflow-x-hidden overflow-y-hidden`}>
         {/* <Header /> */}
         <Sidebar/>
         {children}

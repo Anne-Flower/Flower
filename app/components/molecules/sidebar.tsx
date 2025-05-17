@@ -28,8 +28,10 @@ export default function Sidebar() {
             <Tab href="/capsules" label="Capsules" color="#0324d9" />
           </div>
         </div>
-      </nav>
-      <Mentions />
+        <footer role="contentinfo" aria-label="Mentions légales">
+          <Mentions />
+        </footer>
+      </nav> 
     </aside>
   );
 }
