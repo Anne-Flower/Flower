@@ -1,9 +1,7 @@
 'use client';
 
 import { useState } from "react";
-import Logo from "./components/atoms/logo";
-import Name from "./components/atoms/name";
-import Video from "./components/atoms/video";
+// import Video from "./components/atoms/video";
 import Photo from "./components/atoms/photo";
 
 export default function Home() {
@@ -12,10 +10,7 @@ export default function Home() {
     <main className="flex w-full h-full overflow-x-hidden overflow-y-hidden"
     role="main"
       aria-label="Section d'accueil avec logo et nom">
-        <header className="flex items-center justify-left overflow-y-hidden" id="site-title">
-          <Logo/>
-          <Name/> 
-        </header>
+        
         {/* <div className="w-[1176px]">
           <Video/>
         </div> */}

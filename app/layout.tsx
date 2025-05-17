@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { IBM_Plex_Mono, Josefin_Sans } from "next/font/google"
 import "./globals.css"
 import Sidebar from "./components/molecules/sidebar"
+import Logo from "./components/atoms/logo"
+import Name from "./components/atoms/name"
 // import Header from "@/components/header"
 
 const ibm = IBM_Plex_Mono({
@@ -29,7 +31,10 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${ibm.variable} ${josefin.variable} bg-[#f5efef] overflow-x-hidden overflow-y-hidden`}>
-        {/* <Header /> */}
+        <header className="flex items-center justify-left overflow-y-hidden" id="site-title">
+          <Logo/>
+          <Name/> 
+        </header>
         <Sidebar/>
         {children}
       </body>
