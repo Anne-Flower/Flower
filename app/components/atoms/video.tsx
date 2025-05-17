@@ -1,3 +1,5 @@
+import Image from "next/image";
+import portrait from "@/assets/portrait.png";
 const video = () => {
   return (
     <video
@@ -14,6 +16,14 @@ const video = () => {
         label="English"
       />
     </video>
+    // <div className="relative h-[460px] mt-44 pl-[226px]">
+    //   <Image
+    //     src={portrait}
+    //     alt="portrait"
+    //     fill
+    //     className="object-contain"
+    //   />
+    // </div>
   )
 }
 
