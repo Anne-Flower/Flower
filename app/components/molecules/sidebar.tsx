@@ -18,7 +18,7 @@ export default function Sidebar() {
         <div className="relative hover:bg-[#ff6937] transition-colors hover:delay-130 delay-0 hover:shadow-[0_8px_10px_rgba(0,0,0,0.20)] hover:z-30">
           <div className="absolute bottom-0 left-0 w-full border-b-[2px] border-[#CCADAD] z-0" />
           <div className="transition-transform hover:translate-x-8 duration-600 ease-in-out relative z-10">
-            <Tab href="/projects" label="Projets" color="#3550e1" />
+            <Tab href="/projects" label="Projects" color="#3550e1" />
           </div>
         </div>
 
