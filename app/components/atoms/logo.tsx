@@ -6,7 +6,8 @@ const logo = () => {
     <Image
       src={logoAF}
       alt="Logo d'Anne-Flore Bernard"
-      className="h-full w-full object-contain"
+      className="h-[114px] w-[300px] object-contain absolute top-8 right-[204px]"
+      aria-hidden="true"
     />
   )
 }

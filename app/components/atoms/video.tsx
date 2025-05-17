@@ -1,13 +1,18 @@
-import videoFile from '@/assets/medium.mp4'
 const video = () => {
   return (
     <video
-    src={videoFile}
     controls
     autoPlay
     loop
     muted
-    className="w-full h-auto">
+    className="h-[460px] w-full mt-44 pl-[226px] ">
+      <source src="@/assets/video/medium.mp4" type="video/mp4" />
+      <track
+        src="@/assets/video/medium.mp4"
+        kind="subtitles"
+        srcLang="en"
+        label="English"
+      />
     </video>
   )
 }
