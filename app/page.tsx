@@ -14,8 +14,9 @@ export default function Home() {
         {/* <div className="w-[1176px]">
           <Video/>
         </div> */}
-        <div className="w-full max-w-[870px] ml-[305px] mb-42"><Photo/></div>
-        
+        <div className="w-full h-full max-w-[868px] ml-[308px]">
+          <Photo/>
+        </div>
         <div>
         <p
           onMouseEnter={() => setIsHovered(true)}
