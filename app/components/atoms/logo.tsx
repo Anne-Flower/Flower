@@ -1,15 +1,14 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import logoAF from '@/assets/logoAF.jpeg'
-
+import LogoV7 from '@/assets/logoV7.png'
 const Logo = () => {
   return (
     <Link href="/" aria-label="Aller à la page d'accueil">
       <Image
-        src={logoAF}
+        src={LogoV7}
         alt="Logo d'Anne-Flore Bernard"
-        className="h-[114px] w-[300px] object-contain absolute top-8 right-[204px]"
+        className="h-[120px] w-[280px] object-contain absolute top-[29px] right-[241px]"
         aria-hidden="true"
       />
     </Link>
