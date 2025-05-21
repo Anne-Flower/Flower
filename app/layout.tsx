@@ -17,8 +17,8 @@ const josefin = Josefin_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Anne-Flore Bernard",
-  description: "Portfolio de développeuse fullstack créative."
+  title: "Me | Anne-Flore Bernard",
+  description: "Web site of a creative and logic full-stack developer."
 }
 
 export default function RootLayout({
