@@ -1,15 +1,23 @@
 "use client";
 
-import Image from 'next/image'
-
+import Image from "next/image";
+import { useState } from "react";
 
 type MenuProps = {
   label: string;
   color: string;
-  text?:string;
+  text?: string;
+  images?: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+    className?: string;
+  }[];
 };
 
-const Menu = ({ label, color, text }: MenuProps) => {
+const Menu = ({ label, color, text, images = [] }: MenuProps) => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="relative border border-[#bf9899] py-6 px-4 flex items-stretch border-b-0">
       <span
@@ -18,11 +26,11 @@ const Menu = ({ label, color, text }: MenuProps) => {
         aria-hidden="true"
       />
 
-      <details
-        name="accordion"
+      <div
         className="pl-6 pr-10 w-full font-['IBM_Plex_Mono'] text-[14px] text-[#400F38]"
+        onClick={() => setOpen(!open)}
       >
-        <summary className="relative list-none cursor-pointer text-[16px] flex justify-between items-center">
+        <div className="relative list-none cursor-pointer text-[16px] flex justify-between items-center">
           {label}
           <span className="transition-transform duration-300 ml-2 text-[#bf9899]">
             <svg
@@ -32,28 +40,40 @@ const Menu = ({ label, color, text }: MenuProps) => {
               viewBox="0 0 24 24"
               fill="currentColor"
               className="text-[#687ce8]"
-            >
+              >
               <path d="M12 16l-6-6h12z" />
             </svg>
           </span>
-        </summary>
-
-        <div className="pt-4">{text ? (
-            <a
-              href={text}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#0324d9] underline decoration-[0.2px] underline-offset-4 hover:text-[#ed4e29] transition-colors"
-            >
-              To see
-            </a> ) : (
-            <span>Coming</span>
-          )}
-          <Image src="/assets/chloe.png" alt="oeuvres de Chloé Guillermin" width={290} height={110} className='absolute right-60 top-0 h-[110px]'/>
-          <Image src="/assets/chloeBis.png" alt="oeuvres de Chloé Guillermin" width={270} height={110} className='absolute right-132 top-0 h-[110px]'/>
-
         </div>
-      </details>
+              {open && (
+
+          <div className="pt-4 cursor-pointer">
+            {text ? (
+              <a
+                href={text}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#0324d9] underline decoration-[0.2px] underline-offset-4 hover:text-[#300c2a] transition-colors"
+              >
+                To see
+              </a>
+            ) : (
+              <span>Coming</span>
+            )}
+
+            {images.map((img, idx) => (
+              <Image
+                key={idx}
+                src={img.src}
+                alt={img.alt}
+                width={img.width}
+                height={img.height}
+                className={img.className}
+              />
+            ))}
+          </div>
+          )}
+      </div>
     </div>
   );
 };
