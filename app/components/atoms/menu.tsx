@@ -37,7 +37,7 @@ const Menu = ({ label, color }: MenuProps) => {
                 height="40"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="text-[#0324d9]"
+                className="text-[#687ce8]"
               >
                 <path d="M12 16l-6-6h12z" />
               </svg>
