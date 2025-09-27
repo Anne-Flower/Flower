@@ -21,9 +21,9 @@ export default function Home() {
         className="grid grid-cols-10 gap-x-[0px] gap-y-[0px] place-items-center pl-[148px]  "
         style={{
           WebkitMaskImage:
-            "linear-gradient(to bottom, rgba(12, 18, 137, 0.05), rgba(12, 12, 145, 1))",
+            "linear-gradient(to bottom, rgba(142, 145, 212, 0.05), rgba(12, 12, 145, 1))",
           maskImage:
-            "linear-gradient(to bottom, rgba(24, 17, 159, 0.05), rgba(109, 85, 204, 1))",
+            "linear-gradient(to bottom, rgba(91, 87, 164, 0.05), rgba(24, 29, 158, 1))",
           pointerEvents: "none",
         }}
       >

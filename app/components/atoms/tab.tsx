@@ -20,12 +20,12 @@ const Tab = ({ href, label, color }: TabProps) => {
 
   return (
     <a href={dynamicHref} className={tabLinkClasses}>
-      <div
+      <span
         className="absolute left-0 top-0 h-[38px] w-[12px] transition-all duration-300 ease-in-out group-hover:w-full"
         style={{ backgroundColor: color }}
-      ></div>
+      ></span>
 
-      <p className="pl-6 relative z-10 transition-transform group-hover:translate-x-6 duration-300 ease-in-out">{dynamicLabel}</p>
+      <span className="pl-6 relative z-10 transition-transform group-hover:translate-x-6 duration-300 ease-in-out">{dynamicLabel}</span>
     </a>
   );
 };
