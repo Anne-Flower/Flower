@@ -1,16 +1,19 @@
+'use client'
+
 import Image from "next/image";
 
-const photo = () => {
+const Photo = () => {
   return (
-    <div className="relative h-[570px] mt-44 border-[1px] border-[#f4e3f3]">
+    <div className="relative h-[136px] w-[130px] border border-[#f4e3f3]">
       <Image
-        src={"/assets/portrait1.png"}
-        alt="portrait"
+        src="/assets/portrait-test.png"
+        alt="portrait d'Anne-Flore Bernard"
         fill
-        className=" w-full h-full object-cover"
+        sizes="(max-width: 768px) 120px, 120px"
+        className="object-cover"
       />
     </div>
   )
 }
 
-export default photo
+export default Photo

@@ -40,13 +40,12 @@ const Menu = ({ label, color, text, images = [] }: MenuProps) => {
               viewBox="0 0 24 24"
               fill="currentColor"
               className="text-[#687ce8]"
-              >
+            >
               <path d="M12 16l-6-6h12z" />
             </svg>
           </span>
         </div>
-              {open && (
-
+        {open && (
           <div className="pt-4 cursor-pointer">
             {text ? (
               <a
@@ -72,7 +71,7 @@ const Menu = ({ label, color, text, images = [] }: MenuProps) => {
               />
             ))}
           </div>
-          )}
+        )}
       </div>
     </div>
   );
