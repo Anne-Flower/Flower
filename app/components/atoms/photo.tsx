@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Photo = () => {
   return (
-    <div className="relative h-[136px] w-[130px] border border-[#f4e3f3]">
+    <div className="relative h-[136px] w-[131px] border border-[#f4e3f3]">
       <Image
         src="/assets/portrait-test.png"
         alt="portrait d'Anne-Flore Bernard"
